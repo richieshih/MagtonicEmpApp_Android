@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_go_to_work"
+                android:icon="@drawable/baseline_work_black_48"
+                android:title="@string/nav_punchcard"
+                android:visible="false"/>
+        <item
+                android:id="@+id/nav_history"
+                android:icon="@drawable/baseline_history_black_48"
+                android:title="@string/nav_history"
+                android:visible="false"/>
+        <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/baseline_exit_to_app_black_48"
+                android:title="@string/nav_logout"
+                android:visible="false"/>
+        <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/baseline_touch_app_black_48"
+                android:title="@string/nav_login"
+                android:visible="true"/>
+        <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/baseline_info_black_48"
+                android:title="@string/nav_about"
+                android:visible="true"/>
+    </group>
+
+    <!--item android:title="@string/nav_others">
+        <menu>
+            <item
+                    android:id="@+id/nav_setting"
+                    android:icon="@drawable/baseline_settings_black_48"
+                    android:title="@string/nav_setting"/>
+            <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/baseline_exit_to_app_black_48"
+                    android:title="@string/nav_logout"
+                    android:visible="false"/>
+            <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/baseline_touch_app_black_48"
+                    android:title="@string/nav_login"
+                    android:visible="true"/>
+    </item-->
+
+</menu>

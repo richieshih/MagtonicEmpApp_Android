@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="?attr/actionBarSize"
+                android:id="@+id/punchCard_container">
+
+    <LinearLayout
+            android:id="@+id/linearLayoutPunchCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <!--include
+                android:id="@+id/ac_fragment_punchcard_staffinfo_view"
+                layout="@layout/activity_punchcard_staffinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"></include-->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="3">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+
+                <Button
+                        android:id="@+id/frag_mobilepc_function_button_work"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_corner_blue"
+                        android:text="@string/button_work"
+                        android:textColor="@color/md_white_1000"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:visibility="gone"/>
+
+                <Button
+                        android:id="@+id/frag_MobilePc_function_button_OffWork"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/button_corner_blue"
+                        android:text="@string/button_offwork"
+                        android:textColor="@color/md_white_1000"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                <Button
+                        android:id="@+id/frag_MobilePc_Function_Button_GoOut"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_corner_blue"
+                        android:text="@string/button_goout"
+                        android:textColor="@color/md_white_1000"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:visibility="gone"/>
+
+                <Button
+                        android:id="@+id/frag_mobilepc_function_button_btf"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/button_corner_blue"
+                        android:text="@string/button_btf"
+                        android:textColor="@color/md_white_1000"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+                <Button
+                        android:id="@+id/frag_mobilepc_function_button_work_overtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                       android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_corner_blue"
+                        android:text="@string/button_work_overtime"
+                        android:textColor="@color/md_white_1000"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:visibility="gone"/>
+
+                <Button
+                        android:id="@+id/frag_mobilepc_function_button_offwwork_overtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_corner_blue"
+                        android:text="@string/button_offwwork_overtime"
+                        android:textColor="@color/md_white_1000"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:visibility="gone"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+        <FrameLayout
+                android:id="@+id/ac_fl_punchcard_function"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+            <fragment xmlns:tools="http://schemas.android.com/tools"
+                       android:id="@+id/map"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       tools:context=".MapLocationActivity"
+                       android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+        </FrameLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
